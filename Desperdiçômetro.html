@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main main right'
+                'footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .item1 {
+            grid-area: header;
+            background-color: purple;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .item1>h1 {
+            font-size: 40px;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+    
+
+        .item2 li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: ;
+            color: #ffffff;
+        }
+
+        
+        
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item3>h1 {
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        .item3>p {
+            margin-bottom: 7px;
+            color: #000000;
+        }
+
+        .item4 {
+            grid-area: right;
+            border: 2px solid #0099cc;
+            background-color: white;
+            padding: 15px;
+            color: #000000;
+        }
+
+        .item4>h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .item4 li {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .item5 {
+            grid-area: footer;
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .item1 {
+                grid-area: 1 / span 6;
+            }
+
+            .item2 {
+                grid-area: 2 / span 6;
+            }
+
+            .item3 {
+                grid-area: 3 / span 6;
+            }
+
+            .item4 {
+                grid-area: 4 / span 6;
+            }
+
+            .item5 {
+                grid-area: 5 / span 6;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .item1 {
+                grid-area: 1 / span 6;
+            }
+
+            .item2 {
+                grid-area: 2 / span 1;
+            }
+
+            .item3 {
+                grid-area: 2 / span 4;
+            }
+
+            .item4 {
+                grid-area: 3 / span 6;
+            }
+
+            .item5 {
+                grid-area: 4 / span 6;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .item1 {
+                grid-area: 1 / span 6;
+            }
+
+            .item2 {
+                grid-area: 2 / span 1;
+            }
+
+            .item3 {
+                grid-area: 2 / span 4;
+            }
+
+            .item4 {
+                grid-area: 2 / span 1;
+            }
+
+            .item5 {
+                grid-area: 3 / span 6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="item1">
+            <h1>Desperdiçomêtro</h1>
+        </div>
+        
+
+        <style>
+            .button {
+                border: none;
+                color: white;
+                padding: 18px 36px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                
+            }
+        
+            .button1 {
+                background-color: white;
+                color: black;
+                border: 2px solid #04AA6D;
+            }
+        
+            .button1:hover {
+                background-color: #04AA6D;
+                color: white;
+            }
+        
+            .button2 {
+                background-color: white;
+                color: black;
+                border:15px ;    }
+        
+            .button2:hover {
+                background-color: #008CBA;
+                color: white;
+            }
+            .button1 { width: 390px;}
+        </style>
+        <div class="item2">
+           
+            <ul>
+                <button class="button button1"> Cadastrar Itens<br></button>
+                <button class="button button1 ">Verificar Itens <br>Próximo Vencimento</button>
+                <button class="button button1">Verificar Itens <br> Vencidos</button><br>
+                <button class="button button1">Excluir Itens</button>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <h1>Desperdiçomêtro</h1>
+            <p>O que é: <br>Tem o propósito de diminuir o desperdício de alimentos em casa. Cuidando com a validade dos produtos e data da
+            aproximação de vencimentos.<br>O desperdiçômetro é um sistema que visa medir e mostrar o desperdício de alimentos em um determinado
+            espaço, como um refeitório ou restaurante. Geralmente, envolve a pesagem e a contabilização dos alimentos descartados
+            pelos consumidores, além de possíveis sobras da cozinha.
+</p>
+
+        </div>
+
+        <div class="item4">
+            
+            <ul>
+                
+            <head>
+                <title>Desperdiçômetro</title>
+                <style>
+                    body {
+                        background-color: rgb(248, 248, 248);
+                    }
+            
+                    textarea {
+                        width: 300px;
+                        height: 150px;
+                    }
+            
+                    button {
+                        margin-top: 10px;
+                        padding: 10px;
+                    }
+                </style>
+            </head>
+            
+            <body>
+            
+                <h2>Lista de Compras:</h2>
+                <textarea id="meuTexto"></textarea><br>
+                <button onclick="salvar()">Salvar</button>
+                <button onclick="carregar()">Carregar</button>
+                <button onclick="limpar()">Limpar</button>
+            
+                <script>
+                    function salvar() {
+                        const texto = document.getElementById("meuTexto").value;
+                        localStorage.setItem("comentarioSalvo", texto);
+                        alert("Salvo com sucesso!");
+                    }
+
+                    function carregar() {
+                        const textoSalvo = localStorage.getItem("comentarioSalvo");
+                        if (textoSalvo) {
+                            document.getElementById("meuTexto").value = textoSalvo;
+                            alert("Comentário carregado!");
+                        } else {
+                            alert("Nenhum comentário salvo.");
+                        }
+                    }
+
+                    function limpar() {
+                        localStorage.removeItem("comentarioSalvo");
+                        document.getElementById("meuTexto").value = "";
+                        alert("Comentário apagado.");
+                    }
+                </script>
+            
+            </body>
+            <style>
+                .button {
+                    border: none;
+                    color: white;
+                    padding: 16px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                }
+            
+                .button1 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #04AA6D;
+                }
+            
+                .button1:hover {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+            
+                .button2 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #008CBA;
+                }
+            
+                .button2:hover {
+                    background-color: #008CBA;
+                    color: white;
+                }
+            </style>
+            </head>
+            
+            <body>
+            
+                
+            
+               
+                
+            
+            </body>
+            
+        </div>
+</ul>
+        <div class="item5">
+            <p></p>
+        </div>
+
+    </div>
+
+</body>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <p></p>
+</head>
+<title></title>
+<style>
+    body {
+        background-color: rgb(248, 248, 248);
+    }
+
+    h4 {
+        color: rgb(3, 3, 3);
+    }
+
+    p {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <p></p>
+</body>
+
+
+
+<style>
+    h1 {
+        font-style: italic;
+    }
+
+    h2 {
+        font-family: 'Times New Roman', Times, serif
+    }
+
+    h3 {
+        font-style: sub
+    }
+
+    h4 {
+        font-family: cursive;
+    }
+
+    h4 {
+        color: rgb(236, 143, 143)
+    }
+</style>
+
+
+<style>
+    a:link,
+    a:visited {
+        background-color: #3a00d8;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover,
+    a:active {
+        background-color: red;
+    }
+</style>
+<body></body>
+    </body>
+
+    <head>
+        <title>Salvar localmente</title>
+        <style>
+            body {
+                background-color: rgb(248, 248, 248);
+            }
+
+            textarea {
+                width: 300px;
+                height: 150px;
+            }
+
+            button {
+                margin-top: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+<footer>
+ <style>
+p {color:rgb(3, 3, 3)}
+h1 {text-decoration-style: solid;}
+h1 {text-align: center;}
+p {text-align: center;}
+p {text-align: justify;}
+p {text-indent: 20px;}
+h1 {margin-bottom: 20px;}
+a {margin-bottom: 60px;}
+a {color: rgb(0, 0, 194);}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>O impacto do desperdício de alimentos</h1>
+
+    <p>O desperdício de toneladas e mais toneladas de alimentos traz consequências para o presente e para o futuro.<br>Quando um
+alimento vai para o lixo, os recursos, insumos e energia gastos em sua produção também são desperdiçados.<br> Ou seja,
+comida no lixo também custa caro; de acordo com a PNUMA, o custo da perda e do desperdício de alimentos na<br> economia
+global é estimado em cerca de US$ 1 trilhão.
+
+Outro impacto do desperdício de alimentos é a redução da disponibilidade<br> mundial e local de alimentos. Isso repercute
+negativamente no acesso dos consumidores, gerando aumento nos preços, por exemplo.<br> No longo prazo, o meio ambiente é quem
+mais sofre com o desperdício de alimentos. Segundo a PNUMA, ele gera de 8% a 10% das<br> emissões globais de gases de efeito
+estufa. Além disso, a ineficiência dos sistemas alimentares leva ao desperdício de água,<br> degradação de terra, queima de
+combustíveis, entre outros impactos ambientais causados pela produção e transporte de alimentos.</p> 
+    <a href="https://www.unep.org/pt-br/noticias-e-reportagens/reportagem/como-o-desperdicio-de-alimentos-esta-destruindo-o-planeta">Visite o Exemplo</a>
+
+</footer>
+    
+</html>
